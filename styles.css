@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, sans-serif;
+}
+#welcome, #quiz-container, #loading {
+  text-align: center;
+  display: none;
+}
+#result {
+  display: none;
+  text-align: center;
+}
+#details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.choice {
+  margin: 10px 0;
+}

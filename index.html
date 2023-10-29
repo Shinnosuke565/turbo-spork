@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>クイズアプリ</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="welcome">
+      <h1>ようこそ</h1>
+      <hr />
+      <p>以下のボタンをクリック</p>
+      <hr />
+      <button id="start">開始</button>
+    </div>
+    <div id="quiz-container">
+      <h1 id="question-number">Question Number</h1>
+      <div id="details">
+        <p id="category">[ジャンル]：Entertainment: Video Games</p>
+        <p id="difficulty">[難易度]：easy</p>
+      </div>
+      <hr />
+      <h2 id="question">Which game did NOT get financed via Crowdfunding?</h2>
+      <hr />
+      <div id="choices">
+        <button class="choice" data-answer="false">Town of Salem</button
+        ><br /><br />
+        <button class="choice" data-answer="false">Undertale</button
+        ><br /><br />
+        <button class="choice" data-answer="false">Tower Unite</button
+        ><br /><br />
+        <button class="choice" data-answer="true">Enter the Gungeon</button
+        ><br /><br />
+      </div>
+    </div>
+    <div id="loading">
+      <h1>取得中...</h1>
+      <hr />
+      <p>少々お待ちください</p>
+      <hr />
+    </div>
+    <div id="result">
+      <h1>あなたの正答数は：<span id="score"></span>／10</h1>
+      <hr />
+      <p>再度チャレンジしたい場合は以下をクリック</p>
+      <hr />
+      <button id="retry">ホームに戻る</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
